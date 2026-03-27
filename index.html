@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matovu Farms | Fresh Chicken, Pork & Beef in Uganda</title>
+    <meta name="description"
+        content="Quality chicken, pork, and beef raised with care in Uganda. Fresh daily supply for households, restaurants, and bulk buyers.">
+    <meta name="keywords"
+        content="fresh chicken Uganda, pork Kampala, beef suppliers Uganda, Matovu Farms, livestock Kampala">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#15803d', // Trust, agriculture
+                        brandDarkGreen: '#166534',
+                        brandBrown: '#78350f', // Earth, livestock
+                        brandLight: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Floating WhatsApp Animation */
+        @keyframes pulse-whatsapp {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .whatsapp-float {
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .hero-overlay {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-brandLight antialiased">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-heading text-2xl text-brandGreen font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-leaf"></i> Matovu Farms
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#about" class="text-gray-600 hover:text-brandGreen font-medium transition">About</a>
+                    <a href="#products" class="text-gray-600 hover:text-brandGreen font-medium transition">Products</a>
+                    <a href="#why-us" class="text-gray-600 hover:text-brandGreen font-medium transition">Why Us</a>
+                    <a href="#contact"
+                        class="bg-brandGreen text-white px-6 py-2 rounded-full font-medium hover:bg-brandDarkGreen transition shadow-lg">Order
+                        Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-brandGreen focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#about"
+                class="block px-3 py-2 text-gray-600 hover:text-brandGreen hover:bg-gray-50 rounded-md font-medium">About</a>
+            <a href="#products"
+                class="block px-3 py-2 text-gray-600 hover:text-brandGreen hover:bg-gray-50 rounded-md font-medium">Products</a>
+            <a href="#contact" class="block px-3 py-2 text-brandGreen font-bold hover:bg-gray-50 rounded-md">Order
+                Now</a>
+        </div>
+    </nav>
+
+    <header
+        class="relative bg-[url('file:///C:/Users/DELL/.gemini/antigravity/brain/49065e5e-6419-4615-84d5-a2ae1813a323/chickens_eating_bg_1774606840415.png')] bg-cover bg-center h-[90vh] mt-20">
+        <div class="absolute inset-0 hero-overlay flex flex-col justify-center items-center text-center px-4">
+            <span
+                class="bg-brandBrown text-white text-sm md:text-base font-bold px-4 py-1 rounded-full mb-6 uppercase tracking-wider inline-flex items-center gap-2"><i
+                    class="fa-solid fa-clock"></i> Fresh Daily Supply</span>
+            <h1 class="font-heading text-4xl md:text-6xl text-white font-extrabold max-w-4xl leading-tight mb-6">
+                Fresh, Healthy, and Trusted Farm Products from Matovu Farms
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl">
+                Quality chicken, pork, and beef raised with care in Uganda. Supplying households, restaurants, and bulk
+                buyers.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#products"
+                    class="bg-brandGreen text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brandDarkGreen transition shadow-xl text-center">Order
+                    Now</a>
+                <a href="#contact"
+                    class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-brandGreen transition text-center">Contact
+                    Us</a>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-6 text-white text-sm md:text-base font-medium">
+                <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-brandGreen text-xl"></i>
+                    Locally Raised</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-certificate text-brandGreen text-xl"></i>
+                    Quality Assured</div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-truck-fast text-brandGreen text-xl"></i> Fast
+                    Delivery</div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="w-full lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1592982537447-6f2b6a0a7c18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Ugandan Farmer" class="rounded-2xl shadow-2xl object-cover h-[500px] w-full">
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-6">Farming with Purpose,
+                        Feeding Our Community</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        Located right here in Uganda, Matovu Farms was built on a simple premise: everyone deserves
+                        access to high-quality, ethically raised, and affordable meats. With over a decade of
+                        experience, we take pride in our sustainable farming practices.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-leaf text-brandGreen mt-1"></i>
+                            <span class="text-gray-700"><strong>Ethical Practices:</strong> Our livestock is raised in
+                                clean, spacious environments.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-seedling text-brandGreen mt-1"></i>
+                            <span class="text-gray-700"><strong>100% Natural Feed:</strong> We avoid harmful growth
+                                hormones.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-handshake text-brandGreen mt-1"></i>
+                            <span class="text-gray-700"><strong>Community First:</strong> We partner with local farmers
+                                and support the Ugandan agricultural ecosystem.</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-brandGreen font-bold hover:underline flex items-center gap-2">Partner
+                        with us <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-brandLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brandBrown font-bold tracking-wider uppercase">Our Products</span>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mt-2">Premium Farm Fresh Yields
+                </h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From our farm to your table. Wholesale and retail
+                    quantities available.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition flex flex-col">
+                    <div
+                        class="h-56 bg-[url('https://images.unsplash.com/photo-1548550023-2bf3c498ce64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="font-heading text-2xl font-bold text-gray-900 mb-2">🐔 Poultry (Chicken)</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Healthy broilers and farm-fresh eggs (layers). Raised in
+                            hygienic coops for the best quality meat and eggs.</p>
+                        <div class="text-brandGreen font-bold text-xl mb-4">From UGX 15,000</div>
+                        <a href="#contact"
+                            class="block w-full text-center bg-gray-100 text-gray-800 py-3 rounded-lg font-bold hover:bg-brandGreen hover:text-white transition">Order
+                            / Inquire</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition flex flex-col">
+                    <div
+                        class="h-56 bg-[url('https://images.unsplash.com/photo-1604737771063-88fb7fc1199a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="font-heading text-2xl font-bold text-gray-900 mb-2">🐖 Piggery (Pigs)</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Premium pork cuts and live pigs for sale. Excellent for
+                            butcheries, hotels, and roasting joints.</p>
+                        <div class="text-brandGreen font-bold text-xl mb-4">Bulk & Retail Pricing</div>
+                        <a href="#contact"
+                            class="block w-full text-center bg-gray-100 text-gray-800 py-3 rounded-lg font-bold hover:bg-brandGreen hover:text-white transition">Request
+                            Quote</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition flex flex-col">
+                    <div
+                        class="h-56 bg-[url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="font-heading text-2xl font-bold text-gray-900 mb-2">🐄 Cattle (Beef)</h3>
+                        <p class="text-gray-600 mb-4 flex-grow">Grass-fed cattle providing high-quality beef and fresh
+                            milk. Available for local suppliers and events.</p>
+                        <div class="text-brandGreen font-bold text-xl mb-4">Contact for Rates</div>
+                        <a href="#contact"
+                            class="block w-full text-center bg-gray-100 text-gray-800 py-3 rounded-lg font-bold hover:bg-brandGreen hover:text-white transition">Order
+                            / Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 bg-brandGreen text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mt-2">The Matovu Advantage</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <i class="fa-solid fa-notes-medical text-4xl mb-4 text-brandLight"></i>
+                    <h4 class="font-bold text-xl mb-2">Hygienic</h4>
+                    <p class="text-gray-200 text-sm">Strict biosecurity to ensure healthy livestock.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck-fast text-4xl mb-4 text-brandLight"></i>
+                    <h4 class="font-bold text-xl mb-2">Reliable Supply</h4>
+                    <p class="text-gray-200 text-sm">Consistent output for commercial buyers.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tags text-4xl mb-4 text-brandLight"></i>
+                    <h4 class="font-bold text-xl mb-2">Affordable</h4>
+                    <p class="text-gray-200 text-sm">Direct-from-farm pricing with no middlemen.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-map-location-dot text-4xl mb-4 text-brandLight"></i>
+                    <h4 class="font-bold text-xl mb-2">Local Expertise</h4>
+                    <p class="text-gray-200 text-sm">Deep understanding of the Ugandan market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+                <div class="w-full lg:w-2/5 bg-brandBrown text-white p-10 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading text-3xl font-bold mb-4">Get in Touch</h3>
+                        <p class="text-gray-300 mb-8">Ready to order or need a bulk quote? Fill out the form or contact
+                            us directly on WhatsApp.</p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <i class="fa-solid fa-phone text-2xl text-brandGreen"></i>
+                                <div>
+                                    <p class="text-sm text-gray-300">Call Us Directly</p>
+                                    <a href="tel:+256700000000"
+                                        class="font-bold text-xl hover:text-brandGreen transition">+256 700 000 000</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fa-brands fa-whatsapp text-2xl text-green-400"></i>
+                                <div>
+                                    <p class="text-sm text-gray-300">WhatsApp</p>
+                                    <a href="https://wa.me/256700000000" target="_blank"
+                                        class="font-bold text-xl hover:text-green-400 transition">+256 700 000 000</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fa-solid fa-location-dot text-2xl text-brandGreen"></i>
+                                <div>
+                                    <p class="text-sm text-gray-300">Farm Location</p>
+                                    <p class="font-bold text-xl">Kampala Outskirts, Uganda</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-3/5 p-10">
+                    <h3 class="font-heading text-2xl font-bold text-gray-900 mb-6">Place Your Order / Inquiry</h3>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                <input type="text" placeholder="John Doe"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brandGreen focus:border-brandGreen outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" placeholder="07XX XXX XXX"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brandGreen focus:border-brandGreen outline-none transition">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Interested In</label>
+                                <select
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brandGreen focus:border-brandGreen outline-none transition bg-white">
+                                    <option>Chicken (Broilers)</option>
+                                    <option>Chicken (Eggs)</option>
+                                    <option>Pork Cuts</option>
+                                    <option>Live Pigs</option>
+                                    <option>Beef</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Quantity (approx)</label>
+                                <input type="text" placeholder="e.g. 50 Birds / 10kg Pork"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brandGreen focus:border-brandGreen outline-none transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Additional Details</label>
+                            <textarea rows="3" placeholder="Tell us about delivery needs or specific requests..."
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brandGreen focus:border-brandGreen outline-none transition"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-brandGreen text-white font-bold text-lg py-4 rounded-lg hover:bg-brandDarkGreen transition shadow-lg">Submit
+                            Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <a href="#" class="font-heading text-2xl text-white font-bold flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-leaf text-brandGreen"></i> Matovu Farms
+                </a>
+                <p class="text-sm">Quality chicken, pork, and beef raised with care in Uganda. Feeding the nation with
+                    healthy, affordable, and sustainable farm products.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-brandGreen transition">About Us</a></li>
+                    <li><a href="#products" class="hover:text-brandGreen transition">Our Products</a></li>
+                    <li><a href="#why-us" class="hover:text-brandGreen transition">Why Choose Us</a></li>
+                    <li><a href="#contact" class="hover:text-brandGreen transition">Contact & Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Delivery Options</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Farm Pickup</li>
+                    <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Local Kampala Delivery</li>
+                    <li><i class="fa-solid fa-check text-brandGreen mr-2"></i> Bulk Transport Available</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-sm text-center">
+            &copy; 2026 Matovu Farms. All rights reserved. Built for Growth.
+        </div>
+    </footer>
+
+    <a href="https://wa.me/256700000000?text=Hello%20Matovu%20Farms,%20I%20would%20like%20to%20make%20an%20inquiry."
+        target="_blank"
+        class="fixed bottom-6 right-6 bg-[#25D366] text-white rounded-full p-4 shadow-2xl hover:bg-green-500 transition z-50 whatsapp-float flex items-center justify-center">
+        <i class="fa-brands fa-whatsapp text-4xl"></i>
+    </a>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
